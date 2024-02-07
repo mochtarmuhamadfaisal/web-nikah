@@ -22,9 +22,13 @@
   <!-- link countdown -->
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
   <script src="countdown/simplyCountdown.min.js"></script>
+
+  <!-- link icon btsp -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+  <!-- hero section start -->
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
@@ -35,6 +39,101 @@
       <a href="#undangan" class="btn btn-lg rounded-pill">Lihat Undangan</a>
     </main>
   </section>
+  <!-- hero section end -->
+
+  <!-- navbar section start -->
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Web Nikah</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Web Nikah</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#info">Info</a>
+            <a class="nav-link" href="#story">Story</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#rsvp">RSVP</a>
+            <a class="nav-link" href="#gifts">Gifts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar section end -->
+
+  <!-- home section start -->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Acara Pernikahan</h2>
+          <h3>Diselenggarakan pada 20 Januari 2030 di Padang, Sumatera Barat</h3>
+          <p>Oleh karena itu, dengan segala hormat. Kami bermaksud mengundang Bapak/Ibu, Saudara/I, untuk hadir pada
+            acara pernikahan kami.</p>
+        </div>
+      </div>
+
+      <div class="row couple mt-5">
+        <div class="col-lg-6">
+          <div class="row d-flex align-items-center">
+            <div class="col-8 text-end">
+              <h3>Fulan</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus odio dignissimos nulla,
+                porro tempore.</p>
+              <p>Putra Dari <br> Bapak Lorem & Ibu Ipsum</p>
+            </div>
+            <div class="col-4">
+              <img src="/img/avalelaki.jpg" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <span class="love"><i class="bi bi-heart-fill"></i></span>
+
+        <div class="col-lg-6">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <img src="/img/avaperempuan.jpg" class="img-fluid">
+            </div>
+            <div class="col-8 text-start">
+              <h3>Fulana</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus odio dignissimos nulla,
+                porro tempore.</p>
+              <p>Putri Dari <br> Bapak Lorem & Ibu Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home section end -->
+
+  <!-- info section start -->
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Informasi Acara</h2>
+          <p class="alamat">Alamat: Aula Masjid Mujahidin Pontianak.<br>Jl. Jenderal Ahmad Yani No.6c, Akcaya, Kec.
+            Pontianak Selatan, Kota Pontianak, Kalimantan Barat 78113</p>
+          <a href="https://maps.app.goo.gl/R6GETZZ2e8d1ehmj8" target="_blank" class="btn btn-light btn-sm">Lihat
+            Maps</a>
+          <p class="description">Diharapkan untuk tidak salah alamat & tanggal. Manakala tiba di tujuan namun tidak
+            ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi anda salah jadwal, atau salah tempat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- info section end -->
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
