@@ -338,10 +338,10 @@ body {
     font-size: 65%;
   }
 
-  .simply-countdown > .simply-section {
+  /* .simply-countdown > .simply-section {
     padding: 60px !important;
     margin: 5px !important;
-  }
+  } */
 
   .mynavbar .nav-link {
     font-size: 2rem;
@@ -369,19 +369,38 @@ body {
     font-size: 60%;
   }
 
+  .simply-countdown {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
   .simply-countdown > .simply-section {
-    padding: 45px !important;
-    margin: 3px !important;
+    width: 10px !important;
+    height: 10px !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 05px !important;
+    padding: 40px !important;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.8rem !important;
   }
 
   .timeline li .timeline-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .timeline li .timeline-panel {
     width: 70%;
-    transform: translateX(-2%);
+    transform: translateX(1%);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 15%;
   }
 }
 /* handphone end */
