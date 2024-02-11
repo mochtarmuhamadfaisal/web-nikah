@@ -97,7 +97,8 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2 {
   color: var(--blue);
   font-family: "Sacramento";
   font-size: 5rem;
@@ -111,7 +112,8 @@ body {
 }
 
 .home p,
-.info p {
+.info p,
+.rsvp p {
   font-size: 1.1rem;
   color: #a3a3a3;
 }
@@ -292,6 +294,20 @@ body {
 /* galery section start */
 
 /* galery section end */
+
+/* srvp section start */
+.rsvp {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: var(--bg);
+}
+
+.btn-kirim,
+& .btn-kirim:hover {
+  color: var(--putih);
+  background-color: var(--blue);
+}
+/* srvp section end */
 
 /* media query start*/
 /* extra large start */

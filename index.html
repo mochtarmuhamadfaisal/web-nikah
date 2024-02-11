@@ -36,7 +36,7 @@
       <h1>Fulan & Fulana</h1>
       <p>Akan Melangsungkan Resepi Pernikahan Pada:</p>
       <div class="simply-countdown"></div>
-      <a href="#undangan" class="btn btn-lg rounded-pill">Lihat Undangan</a>
+      <a href="#home" class="btn btn-lg rounded-pill" onclick="enableScoll()">Lihat Undangan</a>
     </main>
   </section>
   <!-- hero section end -->
@@ -310,6 +310,47 @@
   </section>
   <!-- gallery section end -->
 
+  <!-- RSVP section start -->
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
+        </div>
+      </div>
+
+      <form method="POST"
+        action="https://script.google.com/macros/s/AKfycbxEor-NnwKgW_gw4wuNnGB8h0pp7Tx2f4UClW5e8SuAxx73QeifO9frc8Ay_V5UFZzD/exec"
+        id="my-form" class="row row-cols-lg-auto g-3 align-items-end justify-content-center">
+        <div class="col-lg-4">
+          <label for="nama" class="form-label text-white">Nama Lengkap</label>
+          <input type="text" class="form-control py-3" id="nama" name="nama" placeholder="Masukan Nama Lengkap Anda">
+        </div>
+
+        <div class="col-lg-2">
+          <label for="jumlah" class="form-label text-white">Jumlah</label>
+          <input type="number" class="form-control py-3" id="jumlah" name="jumlah" placeholder="Masukan Jumlah" min="1"
+            max="5">
+        </div>
+
+        <div class="col-lg-2">
+          <label for="status" class="form-label text-white">Status</label>
+          <select name="status" id="status" class="form-select py-3" placeholder="ada">
+            <option selected="Pilih Salah Satu" disabled>Pilih Salah Satu</option>
+            <option value="hadir">Hadir</option>
+            <option value="tidak hadir">Tidak Hadir</option>
+          </select>
+        </div>
+
+        <div class="col-lg-4 mt-5">
+          <button type="submit" class="btn btn-kirim py-3 w-100 ">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- RSVP section end -->
+
   <!-- js link cdn bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -355,6 +396,55 @@
     });
   </script>
   <!-- hamburger menu navbar klik end-->
+
+  <!-- unutk disble scrol di hero start-->
+  <!-- <script>
+    const rootElement = document.querySelector(':root');
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageYOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScoll() {
+      window.onscroll = function () { }
+      rootElement.style.scrollBehavior = 'smooth';
+      localStorage.setItem('open', 'true');
+    }
+
+    if (!localStorage.getItem('opened')) {
+      disableScroll();
+    }
+
+    disableScroll();
+  </script> -->
+  <!-- unutk disble scrol di hero end -->
+
+  <!-- alert succes submit rsvp start -->
+  <script>
+    window.addEventListener("load", function () {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+          .then(() => {
+            alert("Konfirmasi Kehadiran Berhasil Terkirim!");
+          })
+      });
+    });
+  </script>
+  <!-- alert succes submit rsvp end -->
 </body>
 
 </html>
