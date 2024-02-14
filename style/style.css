@@ -10,7 +10,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 20000px;
+  /* min-height: 20000px; */
 }
 
 /* hero section start */
@@ -98,7 +98,8 @@ body {
 .info h2,
 .story h2,
 .gallery h2,
-.rsvp h2 {
+.rsvp h2,
+.gifts h2 {
   color: var(--blue);
   font-family: "Sacramento";
   font-size: 5rem;
@@ -113,7 +114,8 @@ body {
 
 .home p,
 .info p,
-.rsvp p {
+.rsvp p,
+.gifts p {
   font-size: 1.1rem;
   color: #a3a3a3;
 }
@@ -175,7 +177,8 @@ body {
 
 /* story section start */
 .story,
-.gallery {
+.gallery,
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
   background-image: url(../img/bgaja.png);
@@ -183,7 +186,8 @@ body {
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -308,6 +312,61 @@ body {
   background-color: var(--blue);
 }
 /* srvp section end */
+
+/* gifts section start */
+.list-group-item:hover {
+  background-color: var(--blue);
+  color: var(--putih);
+}
+/* gifts section end */
+
+/* footer section start */
+footer {
+  padding: 3rem;
+  background-color: var(--blue);
+  color: var(--putih);
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+}
+/* footer section end */
+
+/* icon music section start */
+.audio-icon-sound {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  position: fixed;
+  border-radius: 100%;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: var(--putih);
+  background-color: #7eb2ff;
+  animation: muter 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes muter {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* icon music section end */
 
 /* media query start*/
 /* extra large start */

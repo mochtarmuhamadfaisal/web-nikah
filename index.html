@@ -32,7 +32,7 @@
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <h4>Kepada Bapak/Ibu?Saudara/i,</h4>
+      <h4> Kepada <span>Bapak/Ibu?Saudara/i, </span></h4>
       <h1>Fulan & Fulana</h1>
       <p>Akan Melangsungkan Resepi Pernikahan Pada:</p>
       <div class="simply-countdown"></div>
@@ -124,6 +124,10 @@
           <h2>Informasi Acara</h2>
           <p class="alamat">Alamat: Aula Masjid Mujahidin Pontianak.<br>Jl. Jenderal Ahmad Yani No.6c, Akcaya, Kec.
             Pontianak Selatan, Kota Pontianak, Kalimantan Barat 78113</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8172644480296!2d109.33657389999999!3d-0.0416842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59c4e5d2e2bb%3A0xfb7c40951d8c6c18!2sAula%20Serbaguna%20Mujahidin%20Pontianak!5e0!3m2!1sid!2sid!4v1707929321401!5m2!1sid!2sid"
+            width="100%" height="250" style="border-radius:10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
           <a href="https://maps.app.goo.gl/R6GETZZ2e8d1ehmj8" target="_blank" class="btn btn-light btn-sm my-3">Lihat
             Maps</a>
           <p class="description">Diharapkan untuk tidak salah alamat & tanggal. Manakala tiba di tujuan namun tidak
@@ -316,7 +320,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <h2>Konfirmasi Kehadiran</h2>
-          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
         </div>
       </div>
 
@@ -347,9 +351,101 @@
           <button type="submit" class="btn btn-kirim py-3 w-100 ">Kirim</button>
         </div>
       </form>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-12">
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function () { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://web-nikah.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+              Disqus.</a></noscript>
+        </div>
+      </div>
     </div>
   </section>
   <!-- RSVP section end -->
+
+  <!-- gifts section start -->
+  <section id="gifts" class="gifts">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Ungkapan Kata Kasih</span>
+          <h2>Hadiah Dari Kamu</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui itaque officia consectetur.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <ul class="list-group gap-3">
+            <li class="p-4 list-group-item d-flex justify-content-between align-items-center">
+              <div class="nama text-start">
+                <h4>Mochtar Muhammad Faisal</h4>
+                <h5>12345678</h5>
+              </div>
+              <div class="fs-3 rek">BCA</div>
+            </li>
+            <li class="p-4 list-group-item d-flex justify-content-between align-items-center">
+              <div class="nama text-start">
+                <h4>Zamaludin Faid Ambri</h4>
+                <h5>98765432</h5>
+              </div>
+              <div class=" fs-3">Mandiri</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gifts section end -->
+
+  <!-- footer section start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small>&copy; 2024 Web Nikah. All Rights Reserved</small>
+          <small>Design By <a href="https://instagram.com/tigeweb" target="_blank">TigWeb</a></small>
+
+          <ul class="mt-4 d-flex justify-content-center align-items-center gap-3">
+            <li><a href="#"></a><i class="bi bi-instagram"></i></li>
+            <li><a href="#"></a><i class="bi bi-tiktok"></i></li>
+            <li><a href="#"></a><i class="bi bi-facebook"></i></li>
+            <li><a href="#"></a><i class="bi bi-youtube"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- audio button section start -->
+  <div class="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/musik.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="audio-icon-sound" style="display: none;">
+      <i class="bi bi-disc-fill"></i>
+    </div>
+  </div>
+  <!-- audio button section end -->
 
   <!-- js link cdn bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -398,8 +494,12 @@
   <!-- hamburger menu navbar klik end-->
 
   <!-- unutk disble scrol di hero start-->
-  <!-- <script>
+  <script>
     const rootElement = document.querySelector(':root');
+    const audioIconSound = document.querySelector('.audio-icon-sound');
+    const audioIcon = document.querySelector('.audio-icon-sound i');
+    let isPlaying = false;
+    const song = document.querySelector('#song');
 
     function disableScroll() {
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -415,15 +515,37 @@
     function enableScoll() {
       window.onscroll = function () { }
       rootElement.style.scrollBehavior = 'smooth';
-      localStorage.setItem('open', 'true');
+      // localStorage.setItem('open', 'true');
+      playAudio();
     }
 
-    if (!localStorage.getItem('opened')) {
-      disableScroll();
+    function playAudio() {
+      song.volume = 0.5;
+      audioIconSound.style.display = 'flex';
+      song.play();
+      isPlaying = true;
     }
+
+    audioIconSound.onclick = function () {
+      if (isPlaying) {
+        song.pause();
+        audioIcon.classList.remove('bi-disc-fill');
+        audioIcon.classList.add('bi-pause-circle-fill');
+      } else {
+        song.play();
+        audioIcon.classList.remove('bi-pause-circle-fill');
+        audioIcon.classList.add('bi-disc-fill');
+      }
+
+      isPlaying = !isPlaying;
+    }
+
+    // if (!localStorage.getItem('opened')) {
+    //   disableScroll();
+    // }
 
     disableScroll();
-  </script> -->
+  </script>
   <!-- unutk disble scrol di hero end -->
 
   <!-- alert succes submit rsvp start -->
@@ -445,6 +567,18 @@
     });
   </script>
   <!-- alert succes submit rsvp end -->
+
+  <!-- melakuakn query URL start -->
+  <script>
+    const urlParmas = new URLSearchParams(window.location.search);
+    const nama = urlParmas.get('nama') || '';
+    const pronoun = urlParmas.get('p') || 'Bapak/Ibu/Saudara/i';
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+    document.querySelector('#nama').value = nama;
+  </script>
+  <!-- melakuakn query URL end -->
 </body>
 
 </html>
